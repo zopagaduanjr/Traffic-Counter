@@ -2,6 +2,10 @@
 Raspberry Pi | OpenCV
 
 ## Final Product
+### Actual Gameplay
+| Desktop | Mobile |
+| ------------- |:-------------:|
+| ![Desktop_gif](media/desktop.gif)      | ![Desktop_site2](media/mobile1.gif)  |
 ### Site View
 | Desktop | Version           |
 | ------------- |:-------------:|
