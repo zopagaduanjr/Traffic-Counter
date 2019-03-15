@@ -1,0 +1,400 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Contra Currus by Zal</title>
+    <link rel="icon" type="image/ico" href="static/images/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+</head>
+    <body class="is-preload">
+
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Welcome</a></li>
+                        <li><a href="#one">Traffic Counter</a></li>
+                        <li><a href="#two">People Counter</a></li>
+                        <li><a href="#three">Documentation</a></li>
+                        <li><a href="#four">Get in Touch</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1 fullscreen fade-up">
+                <div class="inner">
+                    <h1>Traffic Counter</h1>
+                    <p>
+                        A car counting Web Application Stack designed by <a href="https://zaldy.ga/">Zal</a><br />
+                        using OpenCV | Flask | uWSGI.
+                    </p>
+                    <ul class="actions">
+                        <li><a href="#one" class="button scrolly">Learn more</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- One -->
+            <section id="one" class="wrapper style2 spotlights">
+                <section>
+                    <!--<img src="static/images/pic01.jpg" alt="" data-position="center center" />-->
+                    <video width="700" style="max-width: 100%; height: auto;" autoplay="autoplay" loop="loop">
+                        <source src="static/images/bankerohanfinal.mp4" type="video/mp4" />
+                    </video>
+                    <div class="content">
+                        <div class="inner">
+                            <!--<h2>Sed ipsum dolor</h2>-->
+                            <!--<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+                <ul class="actions">
+                    <li><a href="generic.html" class="button">Learn more</a></li>
+                </ul>-->
+                            <h2>Traffic Volume Data : Bankerohan Bridge</h2>
+                            <!-- bar chart canvas element -->
+                            <canvas id="BankeChart" width="500" height="250" style="max-width: 100%; height: auto;"></canvas>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <video width="700" style="max-width: 100%; height: auto;" autoplay="autoplay" loop="loop">
+                        <source src="static/images/clav.mp4" type="video/mp4" />
+                    </video>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Traffic Volume Data : Claveria</h2>
+                            <!-- bar chart canvas element -->
+                            <canvas id="ClaveriaChart" width="500" height="250" style="max-width: 100%; height: auto;"></canvas>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <video width="700" style="max-width: 100%; height: auto;" autoplay="autoplay" loop="loop">
+                        <source src="static/images/nightclav.mp4" type="video/mp4" />
+                    </video>
+                    <div class="content">
+                        <div class="inner">
+                            <h2>Night Data : Claveria</h2>
+                            <!-- bar chart canvas element -->
+                            <canvas id="NightClaveriaChart" width="500" height="250" style="max-width: 100%; height: auto;"></canvas>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Two -->
+            <section id="two" class="wrapper style1  fullscreen">
+                <div class="inner">
+                    <h2>Real-time Computer Vision</h2>
+                    <!--<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>-->
+                    <section  class="image" >
+                        <img src="{{ url_for('video_feed') }}" style="max-width: 100%; height: auto;"   />
+                    </section>
+                    <section>
+                        <h2>Person Volume Data : SEA Fair</h2>
+                        <canvas id="PeopleChart" width="1000" height="300" style="max-width: 100%; height: auto;"></canvas>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Three -->
+            <section id="three" class="wrapper style3 fade-up">
+                <div class="inner">
+                    <h2>What we do</h2>
+                    <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+                    <div class="features">
+                        <section>
+                            <a href="#" class="image"><img src="static/images/docc1.jpg" alt="" data-position="top center" /></a>
+
+                        </section>
+                        <section>
+                            <a href="#" class="image"><img src="static/images/docc2.jpg" alt="" data-position="top center" /></a>
+                        </section>
+                        <section>
+                            <a href="#" class="image"><img src="static/images/docc3.jpg" alt="" data-position="top center" /></a>
+                        </section>
+                        <section>
+                            <a href="#" class="image"><img src="static/images/docc4.jpg" alt="" data-position="top center" /></a>
+                        </section>
+                        <section>
+                            <a href="#" class="image"><img src="static/images/docc5.jpg" alt="" data-position="top center" /></a>
+                        </section>
+                        <section>
+                            <a href="#" class="image"><img src="static/images/docc6.jpg" alt="" data-position="top center" /></a>
+                        </section>
+                    </div>
+                    <ul class="actions">
+                        <li><a href="generic.html" class="button">Learn more</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Four -->
+            <!-- Footer -->
+            <footer id="footer" class="wrapper style1-alt">
+                <div class="inner">
+                    <ul class="menu">
+                        <li>&copy; Untitled. All rights reserved.</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+            <!-- Scripts -->
+            <script src="static/js/jquery.min.js"></script>
+            <script src="static/js/jquery.scrollex.min.js"></script>
+            <script src="static/js/jquery.scrolly.min.js"></script>
+            <script src="static/js/browser.min.js"></script>
+            <script src="static/js/breakpoints.min.js"></script>
+            <script src="static/js/util.js"></script>
+            <script src="static/js/main.js"></script>
+            <script src="static/Chart.min.js"></script>
+            <script>
+        // Global parameters:
+        // do not resize the chart canvas when its container does (keep at 600x400px)
+        Chart.defaults.global.responsive = false;
+            Chart.defaults.global.defaultFontColor = 'white';
+
+
+        // define the chart data
+        var bankeChartData = {
+            labels : [{% for item in bankelabels1 %}
+                        "{{item}}",
+                        {% endfor %}],
+            datasets : [{
+                label: '{{ legend1 }}',
+                fill: true,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "rgba(75,192,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                fontColor: 'black',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 10,
+                data : [{% for item in bankevalues1 %}
+                {{item}},
+            {% endfor %}],
+            spanGaps: false
+            },
+            {
+                label: '{{ legend2 }}',
+                    fill: true,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(176,33,97,0.4)",
+                    borderColor: "rgba(176,33,97,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    fontColor: 'black',
+                    pointBorderColor: "rgba(176,33,97,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(176,33,97,1)",
+                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data : [{% for item in bankevalues2 %}
+                {{item}},
+                {% endfor %}],
+                spanGaps: false
+
+            }
+            ]
+        }
+
+        var claveriaChartData = {
+            labels : [{% for item in claverialabels1 %}
+            "{{item}}",
+            {% endfor %}],
+        datasets : [{
+            label: 'Going to bajada',
+            fill: true,
+            lineTension: 0.1,
+            backgroundColor: "rgba(232, 126, 4,0.4)",
+            borderColor: "rgba(232, 126, 4,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            fontColor: 'black',
+            pointBorderColor: "rgba(232, 126, 4,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(232, 126, 4,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data : [{% for item in claveriavalues1 %}
+            {{item}},
+        {% endfor %}],
+        spanGaps: false
+        }
+        ]
+        }
+        var peoplechartData = {
+            labels: [{% for item in abreezalabels1 %}
+            "{{item}}",
+            {% endfor %}],
+        datasets : [{
+            label: 'To the left',
+            fill: true,
+            lineTension: 0.1,
+            backgroundColor: "rgba(30, 139, 195,0.4)",
+            borderColor: "rgba(30, 139, 195,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: "rgba(30, 139, 195,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(30, 139, 195,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data : [{% for item in abreezavalues1 %}
+            {{item}},
+        {% endfor %}],
+        spanGaps: false
+        },
+        {
+            label: 'To the right',
+                fill: true,
+                lineTension: 0.1,
+                backgroundColor: "rgba(176,33,97,0.4)",
+                borderColor: "rgba(176,33,97,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                fontColor: 'black',
+                pointBorderColor: "rgba(176,33,97,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(176,33,97,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 10,
+                data : [{% for item in abreezavalues2 %}
+            {{item}},
+            {% endfor %}],
+            spanGaps: false
+
+        }
+        ]
+        }
+
+
+
+        var nightclaveriaChartData = {
+            labels : [{% for item in claverialabels1 %}
+            "{{item}}",
+            {% endfor %}],
+        datasets : [{
+            label: 'Going to bajada',
+            fill: true,
+            lineTension: 0.1,
+            backgroundColor: "rgba(108, 122, 137,0.4)",
+            borderColor: "rgba(108, 122, 137,1)",
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            fontColor: 'black',
+            pointBorderColor: "rgba(108, 122, 137,1)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(108, 122, 137,1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            pointHoverBorderWidth: 2,
+            pointRadius: 1,
+            pointHitRadius: 10,
+            data : [{% for item in claveriavalues1 %}
+            {{item}},
+        {% endfor %}],
+        spanGaps: false
+        }
+        ]
+        }
+
+
+
+
+
+
+
+
+
+
+        // get chart canvas
+        var ctbangkerohan = document.getElementById("BankeChart").getContext("2d");
+        var ctclaveria = document.getElementById("ClaveriaChart").getContext("2d");
+        var ctpeople = document.getElementById("PeopleChart").getContext("2d");
+        var ctnightclaveria = document.getElementById("NightClaveriaChart").getContext("2d");
+
+
+        // create the chart using the chart canvas
+            var bangkerohanChart = new Chart(ctbangkerohan, {
+            type: 'line',
+            data: bankeChartData,
+            options: {
+                tooltips: {
+                    enabled: true,
+                    mode: 'single',
+                    callbacks: {
+                        label: function(tooltipItems, data) {
+                            return tooltipItems.yLabel + ' cars';
+                        }
+                    }
+                },
+            }
+            });
+            var claveriaChart = new Chart(ctclaveria, {
+            type: 'line',
+            data: claveriaChartData,
+            });
+            var peopleChart = new Chart(ctpeople, {
+                type: 'line',
+                data: peoplechartData,
+            });
+
+                var nightclaveriaChart = new Chart(ctnightclaveria, {
+                type: 'line',
+                data: nightclaveriaChartData,
+            });
+
+            </script>
+
+</body>
+    </html>
