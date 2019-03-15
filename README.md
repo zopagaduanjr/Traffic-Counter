@@ -1,7 +1,6 @@
 # Microprocessor_Project
 Raspberry Pi | OpenCV
 
-## Final Product
 ### Actual Gameplay
 | Desktop | Mobile |
 | ------------- |:-------------:|
