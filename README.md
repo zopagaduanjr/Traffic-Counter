@@ -1,22 +1,21 @@
-# Microprocessor_Project
-Raspberry Pi | OpenCV
+# Traffic Counter
 
-### Actual Gameplay
-| Desktop | Mobile |
-| ------------- |:-------------:|
-| ![Desktop_gif](media/desktop.gif)      | ![Desktop_site2](media/mobile1.gif)  |
-### Site View
-| Desktop | Version           |
-| ------------- |:-------------:|
-| ![Desktop_site1](media/site1.png)      | ![Desktop_site2](media/site2.png)  |
-| ![Desktop_site3](media/site3.png)      | ![Desktop_site4](media/site4.png)  |
+A vehicle counting system developed with OpenCV and Flask
 
-| Mobile/Tab  | Version           |
-| ------------- |:-------------:|
-| ![Desktop_site1](media/tab1.png)      | ![Desktop_site2](media/tab2.png)  |
-| ![Desktop_site3](media/tab3.png)      | ![Desktop_site4](media/tab4.png)  |
+Implemented on Raspberry Pi 3B+ motherboard
 
-### Progress
-| February 11, 2019      | February 14, 2019     | February 21, 2019     |
-| ------------ | ------------- | ------------- |
-| ![Microprocessor_Project](media/traffic.gif) | ![Microprocessor_Project](media/traffic2.gif) | ![Microprocessor_Project](media/traffic3.gif) |
+## Hardware
+
+| Components                                           |                        Camera                         |
+| ---------------------------------------------------- | :---------------------------------------------------: |
+| ![components](traffic_app/static/images/docc2.jpg)   |    ![camera](traffic_app/static/images/docc1.jpg)     |
+| Components Combined                                  |                 Data Collection Setup                 |
+| ![cmpnts_cmbnd](traffic_app/static/images/docc3.jpg) | ![dt_cllctn_stp](traffic_app/static/images/docc4.jpg) |
+| Occular A                                            |                       Occular B                       |
+| ![occlr_a](traffic_app/static/images/docc5.jpg)      |    ![occlr_b](traffic_app/static/images/docc6.jpg)    |
+
+## Software
+
+![site_c](media/site2.png)
+
+![site_b](media/site3.png)
